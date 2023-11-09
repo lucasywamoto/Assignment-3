@@ -1,0 +1,290 @@
+/* Define custom font Gaspacho */
+@font-face {
+    font-family: Gaspacho;
+    src: url('fonts/Gazpacho\ Bold.ttf');
+}
+
+/* Define CSS variables for color scheme */
+:root {
+    --orange: #FF7300;
+    --brown: #562301;
+    --yellow: #FFF204;
+}
+
+/* Apply smooth scrolling behavior to HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Apply a consistent box model and default styles */
+* {
+    box-sizing: border-box;
+    color: var(--yellow);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Styling for paragraphs */
+p {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+/* Styling for bold elements */
+strong {
+    font-family: Gaspacho;
+    /* Applying the custom font */
+}
+
+/* Navigation bar styles */
+nav {
+    /* Fixed navigation bar at the top */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    width: 100vw;
+    position: fixed;
+    filter: drop-shadow(5px 5px 8px #00000088);
+    z-index: 9999;
+}
+
+nav>img {
+    margin-right: auto;
+    /* Pushes the image to the right */
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-family: Gaspacho;
+    /* Applying the custom font to navigation links */
+}
+
+/* Home section styles */
+#home {
+    /* Styling for the home section */
+    height: 75vh;
+    background: url(images/background.png), linear-gradient(120deg, var(--orange), 75%, var(--yellow));
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: url(images/background.png); */
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+#home h1 {
+    font-family: Gaspacho;
+    /* Applying the custom font */
+    font-size: 56px;
+    text-shadow: 5px 5px #562301;
+}
+
+.reeses-image {
+    /* Styling for a specific image */
+    position: absolute;
+    right: -200px;
+    rotate: -15deg;
+    animation: mymove 10s 1;
+    /* Applying animation */
+    animation-timing-function: ease;
+}
+
+/* Keyframes for animation */
+@keyframes mymove {
+    from {
+        right: -800px;
+        rotate: -45deg;
+        overflow: hidden;
+    }
+
+    /* Define starting point for animation */
+}
+
+/* About section styles */
+#about {
+    height: 75vh;
+    padding: 32px;
+    background-color: var(--brown);
+    display: flex;
+    align-items: center;
+}
+
+#about img {
+    transition-duration: 2s;
+}
+
+#about img:hover {
+    transform: scale(1.2);
+    rotate: -10deg;
+}
+
+#about p {
+    color: var(--orange);
+}
+
+/* Button styles */
+button {
+    background-color: var(--yellow);
+    color: var(--brown);
+    padding: 10px 15px;
+    margin-top: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button strong {
+    color: var(--brown);
+}
+
+button:hover {
+    background-color: var(--orange);
+}
+
+/* Nutrition section styles */
+#nutrition {
+    padding: 60px 32px;
+    background-color: var(--orange);
+}
+
+#nutrition h2 {
+    text-align: center;
+    color: var(--brown);
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+th {
+    padding: 8px;
+    text-align: left;
+    background-color: var(--brown);
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid var(--brown);
+}
+
+/* Define widths for specific columns in table */
+th:nth-child(1),
+td:nth-child(1) {
+    width: 60%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 40%;
+}
+
+table tr:hover {
+    background-color: var(--brown);
+}
+
+/* Image rotation animation */
+.container>img {
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+
+    /* Define rotation animation */
+}
+
+/* Contact section styles */
+#contact {
+    padding: 60px 32px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--brown);
+}
+
+/* Footer contact section styles */
+.footer-contact {
+    width: 40%;
+}
+
+.footer-contact h2,
+.footer-contact p {
+    color: var(--orange);
+}
+
+.footer-contact strong {
+    font-size: 24px;
+}
+
+/* Form styles */
+form {
+    width: 40%;
+}
+
+/* Input and textarea styles */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    background-color: transparent;
+    border: none;
+    color: var(--orange);
+    border-bottom: 1px solid var(--orange);
+    -webkit-appearance: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--orange);
+    opacity: 1;
+}
+
+select {
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: var(--orange);
+    color: var(--brown);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--yellow);
+}

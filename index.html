@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reese's</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/1200px-Reese's_logo.png" alt="Resee's Logo" height="40">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#nutrition">Nutrition Facts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="home">
+            <h1>Milk Chocolate<br>Peanut Butter<br>Cups Candy</h1>
+            <img class="reeses-image" src="images/00056600793217-reeses-peanut-butter-cups-three-pack-46g-front.png" alt="Reese's peanut butter cups" width="900">
+        </div>
+        <div id="about">
+            <img src="images/Reese-s-tempts-chocolate-and-peanut-lovers-with-pop-up-Swap-Shop-in-NYC.png" alt="Reese's peanut butter cups" width="500">
+            <div>
+                <p>Eating <strong>REESE'S Milk Chocolate Peanut Butter Cups</strong> is a one-of-a-kind, multisensory experience. First, you taste the smooth milk chocolate ridges. Next, the creamy peanut butter that melts in your mouth. When those flavours meld together, it’s the perfect balance of salty and sweet, crunchy and smooth. Whether you keep these to yourself or share them with others, REESE'S Cups are the special taste experience that’s so much more than the sum of its delicious parts!</p>
+                <button><strong>BUY NOW</strong></button>
+            </div>
+        </div>
+        <div id="nutrition">
+            <h2>Reese's Peanut Butter Cups Nutritional Facts</h2>
+            <div class="container">
+                <img class="reeses-icon" src="images/reeses-icon.svg" alt="Reeses icon" height="100">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Amount per serving</th>
+                    </tr>
+                    <tr>
+                        <td>Calories</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>Total Fat</td>
+                        <td>6g</td>
+                    </tr>
+                    <tr>
+                        <td>Saturated Fat</td>
+                        <td>2.5g</td>
+                    </tr>
+                    <tr>
+                        <td>Trans Fat</td>
+                        <td>0g</td>
+                    </tr>
+                    <tr>
+                        <td>Cholesterol</td>
+                        <td>5mg</td>
+                    </tr>
+                    <tr>
+                        <td>Sodium</td>
+                        <td>105mg</td>
+                    </tr>
+                    <tr>
+                        <td>Total Carbohydrates</td>
+                        <td>12g</td>
+                    </tr>
+                    <tr>
+                        <td>Dietary Fiber</td>
+                        <td>1g</td>
+                    </tr>
+                    <tr>
+                        <td>Total Sugars</td>
+                        <td>10g</td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td>2g</td>
+                    </tr>
+                </table>
+                <img class="reeses-icon" src="images/reeses-icon.svg" alt="Reeses icon" height="100">
+            </div>
+        </div>
+    </main>
+    <footer id="contact">
+        <div class="footer-contact">
+            <img src="images/1200px-Reese's_logo.png" alt="Reeses Logo" height="40">
+            <h2>Contact Us</h2>
+            <p>Toll Free Number:</p>
+            <strong>1-800-468-1714 (Call or Text)</strong>
+            <p>At Hershey Canada, we are always here to listen to your suggestions and grievances. Please feel free to contact us.</p>
+        </div>
+        <form action="#" method="post">
+            <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+            <select id="inquiry" name="inquiry" required>
+                <option value="">Inquiry Type</option>
+                <option value="product">Product Inquiry</option>
+                <option value="order">Order Issue</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </footer>
+</body>
+</html>
